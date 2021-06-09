@@ -1,11 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
+/*tablet*/
+@media screen and (max-width:1170px) {
+ 
+ .columns{
+    justify-content: center;
+    padding-left: 20px;
 }
-html{
-    scroll-behavior: smooth;
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.box h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.box p{
+    font-size: 1rem;
 }
 
+/* My Image */
+.about img{
+    padding: 0px 20px;
+    width: 400px;
+    height: 300px;
+}
+.name{
+    padding: 5px;
+}
+.name h2{
+    font-size: 1.7rem;
+}
+.name p{
+    font-size: 1rem;
+}
+
+}
+/**/
+/*Phone 1*/
+@media screen and (max-width:900px) {
+  /* Boxes */
+.columns{
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+}
+/*Phone 1 end*/
+
+/*Phone 2*/
+@media screen and (max-width:695px) {
+  
+/* Gallery Images */
+.gallery img{
+    width: 270px;
+    height: 360px;
+}
+
+/* About Section */
+.about{
+    flex-direction: column;
+}
+.about h2{
+    text-align: center;
+}
+
+.about img{
+    width: 200px;
+    height: 150px;
+    padding: 0px 15px;
+}
+/* Message box */
+#message{
+    width: 40%;
+    height: 200px;
+}
+
+/* Boxes */
+.box{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.box p{
+    color: white;
+    font-size: .8rem;
+}
+  }
+/*Phone 2*/
 
 /* Home Section */
 #home{
