@@ -133,8 +133,12 @@
 }
 /*Phone 2*/
 @media only screen and (max-width: 600px) {
+    #education h1{
+        margin: auto !important;
+    }
     h1.heading{
         font-size: 28px !important;
+        text-align: center !important;
     }
    .columns{ margin-left: 0px !important; }
 
