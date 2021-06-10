@@ -1,13 +1,17 @@
 /*tablet*/
-@media screen and (max-width:1170px) {
+@media only screen and (max-width: 1170px) {
  
  .columns{
-    justify-content: center;
+   
+    justify-content: center !important;
     padding-left: 20px;
+    grid-template-columns: auto!important;
+    justify-content: center!important;
+  
 }
 .box{
     height: 200px;
-    width: 400px;
+    width: 90% !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     margin: 10px;
@@ -16,15 +20,18 @@
 .box h2{
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 .box p{
     font-size: 1rem;
+    text-align: center;
 }
 }
 /*tablet end*/
+
 /* My Image */
 .about img{
-    padding: 0px 20px;
+   /* padding: 0px 20px; */
     width: 400px;
     height: 300px;
 }
@@ -40,16 +47,18 @@
 
 }
 /**/
+
 /*Phone 1*/
-@media screen and (max-width:900px) {
+@media only screen and (max-width: 980px) {
   /* Boxes */
-.columns{
-    grid-template-columns: auto;
-    justify-content: center;
-}
+
+/*.columns{
+    grid-template-columns: auto!important;
+    justify-content: center!important;
+} */
 .box{
-    height: 200px;
-    width: 500px;
+    height: 200px !important;
+    width: 500px!important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     margin: 10px;
@@ -64,17 +73,19 @@
     color: white;
     font-size: 1.1rem;
 }
+ .columns{
+    margin-left: 50px !important; 
+}
 
 }
 /*Phone 1 end*/
 
 /*Phone 2*/
-@media screen and (max-width:695px) {
+@media only screen and (max-width: 700px) {
   
 /* Gallery Images */
 .gallery img{
-    width: 270px;
-    height: 360px;
+    width: 80% !important;
 }
 
 /* About Section */
@@ -86,38 +97,53 @@
 }
 
 .about img{
-    width: 200px;
-    height: 150px;
+    width: 90% !important;
     padding: 0px 15px;
 }
 /* Message box */
 #message{
-    width: 40%;
+    width: 40% !important;;
     height: 200px;
 }
 
 /* Boxes */
 .box{
-    height: 150px;
-    width: 250px;
+    height: 220px!important;
+    width: 85%!important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
+   margin: 10px auto 10px auto !important;
+    padding: 5px !important;
 }
 .box h2{
     color: yellowgreen;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     margin-bottom: 20px;
 }
 .box p{
     color: white;
-    font-size: .8rem;
+    font-size: 14px;
+}
+
+.name p{
+    font-size: 14px !important;
+    padding: 0px 40px;
 }
   }
+}
 /*Phone 2*/
+@media only screen and (max-width: 600px) {
+    h1.heading{
+        font-size: 28px !important;
+    }
+   .columns{ margin-left: 0px !important; }
+
+}
 
 /* Home Section */
+body{
+    margin: auto !Important;
+}
 #home{
     display: flex;
     flex-direction: column;
@@ -176,6 +202,7 @@
     display: flex;
     flex-direction: column;
     background-color: #000000dc;
+    padding-bottom: 40px;
 }
 #education h1{
     margin: 60px;
@@ -183,11 +210,12 @@
 .columns{
     display: grid;
     grid-template-columns: auto auto;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    justify-content: space-around;
 }
 .box{
     height: 200px;
-    width: 500px;
+    max-width: 500px; 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     margin: 10px;
@@ -222,7 +250,7 @@
 .about img{
     width: 500px;
     height: 400px;
-    padding: 0px 30px;
+   
 }
 .name{
     padding: 10px;
